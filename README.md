@@ -1,395 +1,468 @@
 java c
-CSC1034:   Lecture   3
-Intro
-•   This   weeks   programming   topics
-•      Programming
-–      Modules
-–    Generators
-–    Named   Tuples
-–    Pizza   (next   weeks   lecture!)
-•    Development
-–   Testing
+CSC1034:   Lecture   1
+Module   Organisation
+•   There   are   three   assessments,   each   based   around   a   practical
+•      Lectures
+•      Practicals
+•      Online   Material
+•      Lectures:   Will   be   available   on   recap
+Material
+All   the   material   is   available   in   Canvas.
+The   python   sources   used   in   these   notes   are   all   available,   also   linked   from   canvas.
+•   If the   script   has   the   line   ##    Status:    Crash,   then   I   am   expecting   it   to   crash
+•   A   few   have   the   line   ##    Status:    Shell,   then   it   is   designed   to   be   typed   into   a   python   shell
+•   If it   has   neither,   then   it   is   a   runnable   python   script.	
+Expectations
+•   The   in   person   lectures   provide   the   broad   outline   for   your   work
+•   The   online   material   covers   the   whole   syllabus
+•   You   should   expect   to   spent   3hrs   a   week   on   the   online   material
+•   You   should   spent   four   hours   a   week   on   practicals   and   the   assessment
+Lectures/Online
+•   There   are   three   weeks   of   material   on   canvas
+•    In   the   last   week,   we   will   recap,   do   some   exercises
+•   And   give   you   time   to   finish   the   coursework
+Practicals
+•   There   are   four   hours   of practicals   a   week
+•   The   practicals   are   supported   by   a   number   of demonstrators
+•   They   are   the   best   opportunity   to   get   one   to   one   support
+Other   forms   of   Support
+•   I   will   be   available   during   most   practicals
+•    Open   for   questions   at   the   end   of   in   person   lectures
+•   You   can   email
+•    But   I   am   one   person,   so   may   be   slow   in   replying
+•   Teams   site   (instructions   on   canvas)
+Questions
+•   Any   Questions
+What   we   teach
+•   This   is   an   introductory   module
+•      Has   a   very   wide   mix   of backgrounds
+•   We   will   touch   on   all   aspects   of programming
+–   but   will   not   go   deep   on   any   parts
+•   The   written   material   describes   what   you   should   know
+•      But   for   many   it will   not   be   enough
 How   to   learn
-•   Important to   read   and   to   play
-•      Don’t   understand   Python
-–      Python Tutorial   https://docs.python.org/3/tutorial/
-•      Not   clear   on   commits   and   pushing
-–      Progit   https://git-scm.com/book/en/v2
-•      Markdown
-–   https://www.markdownguide.org
-Stuck   somewhere
-•   If you   are   stuck   on   the   practials,   read   the   online   material
-•   If you   are   stuck   on   the   online   material,   try   more   of the   practical
-•   If   neither   make   sense,   use   the   internet!
-On   the   Internet
-•   Wikipedia   is   a   good   source
-•    StackOverflow
-•    Can   be   hard   to judge   whether   you   should   understand   something
-•    Be   prepared   to   read   what   does   not   make   sense   now
-•   It   might   make   sense   later
-•      But   be   prepared   to   move   on   -   there   is   lots   of rubbish   out   there
-Use   the   material
-•      Many   of you   are   getting   stuck   with   broken   code
-•    Read   the   error   messages
-•      Here   statements   are   really   good
-•    Change   your   code   carefully   and   thoughtfully
-The   Coursework
-•   What   the   coursework   is
-•      How   you   have   to   submit
-NESS   Submissions
-•      Plenty   of time   left to   submit!
-•    Can   submit   more   than   once
-•      Rigid   timing –   please   submit   early
-Modules
-•    So   far,   you   have   written   code   in   one   place
-•   That’s   okay   for   small   programs
-•      But   becomes   unwieldly   later   on
-•      Python   provides   a   module   system   to   split   things   up
-•    Some   of   the   terminology   overlaps   with   other   usages
-Modules   and   Packages
-•   A   module   consists   of   a   set   of   functions   and   objects
-•      Defined   in   a   single   file
-•    Related   modules   can   be   grouped   into   packages
-•   These   are   all   in   the   same   directory
-•   This   usage   of package   is   different   the   package   we   have   seen   earlier
-•      Mostly,   package   means   “a   package   on   PyPI”
-•   This   kind   of terminology   collision   is   unfortunate,   but   not   really   anyone’s   fault.
-Modules
-•   There   is   an   important   motivation   beyond   a   neat   set   of files
-•    Functions   should   be   sensibly   named
-•    But   they   all   share   the   same   name   space
-•   The   names   would   clash
-•   We   need   a   way   to   disambiguate
-Modules
-•    Similar   to   human   names
-•   I   currently working with   three   other   people   called   “Phil”
-•   We   have   longer   names   to   disambiguate
-•      Likewise,   Newcastle   (-upon-Tyne,   -under-Lyme)
-Modules
-•      Python   knows   about   all   the   functions   in   the   current   module
-•    Others   must   be   import-ed   into   the   current   module
-•    Consider   this   statement:
-import      fred
-•      Python   looks   for   fred.py   in the   current   directory
-•      Loads   it
-–   reads   the   file,   all   the   definitions   in   it
-–   Also   known   as   evaluating   the   file,   or   eval’ing
-•      Makes   all   the   definitions   available
-Modules
-•   There   is   more   to   say   about   modules
-•   I   find   Python   modules   simple   in   theory   and   error-prone   in   practice
-•   Try   to   keep   it   simple
-•      Read   the   Manual
-•   If all   else   fails,   use   brute   force   and   ignorance   to   figure   out   problems
+•      Programming   requires   theoretical   understanding
+•      But   it   is   also   a   skill
+•   You   must   practice
+•   And   you   must   use   other   sources   of information   besides   the   material   here
+Tutorials
+•      Programming   books   come   in   different   styles
+•    Many   designed   for   existing   programmers,   learning   a   new   language
+•   https://docs.python.org/3/tutorial/
+•    Can   be   good,   but   hard   to   read
+•    Often   explain   what   you   can   do,   but   not   why
+Tutorials
+•    Some   are   designed   to   do   specific   things
+•   https://automatetheboringstuff.com/
+•    Can   be   rewarding   because   you   can   “scratch   your   own   itch”
+•   https://inventwithpython.com/pygame/
+•    Or   leave   you   with   a   good   knowledge   of   one   area   but   not   another
+Tutorials
+•    Some   are   designed   to   teaching   programming
+•   http://openbookproject.net/thinkcs/python/english3e/
+•    Gives   an   overview   of   everything
+•      But   can   leave   you   struggling   to   apply   things   to   your   own   problems
+Tutorials
+•   Are   lots   of varieties   of learning   styles
+•      Book   like   websites   (start   at   the   beginning)
+•   Interactive workthroughs
+•   Videos
+•      Daily   Puzzles
+How   to   Learn
+•   You   must   engage   with   the   language   and   with   programming
+•    Look   at   several   different   resources   at   once
+•   Work through   materials
+–      Don’t   stop   if you   don’t   understand   something
+–      Do   stop   if you   don’t   understand   anything
+How   to   Learn
+•      Programming   is   like   learning   a   human   language
+•      Be   a   parrot
+•      Fiddle with   things
+•   Type   (NOT   cut-and-paste)   code   in
+•   Try   changing   it   a   bit
+How   to   Learn
+•   We   will   also   teach   professional   tooling
+•   These   will   be   new   to   many
+•   Adds   complexity   and   can   be   confusing
+•      But   these   tools   are   also   there   to   help
+•      Learning   these   will   help   you   to   learn
+–    Hopefully like a pole, not buckets on your feet
+How   to   Learn
+•    For   a   developer,   learning   new   langauges   is   a   lifetime   occupation
+•    Much,   much   easier   than   human   languages
+•   You   will   see   the   same   ideas   again   and   again
+•   Although   every   language   has   a   head   scratcher
+•   I   can   usually   become   productive   in   a   week
+•   To   get   good   at   a   language   takes   quite   a   bit   longer
+Programming   vs   Development
+•      Have   split the   material   into:
+–      Programming
+–    Software   Development
+•   This   is   somewhat   artifical   but   useful
 Programming
-•      Python   is   a   high-level   language
-•    Comes   with   a   significant   degree   of abstraction
-•    Sometimes   you   need   to   know   what   is   happening
-Generators
-•    range   is   a   very   useful   function
-•   It   returns   a   list   of the   appropriate   size
-for      i      in      [0   ,    1   ,    2   ,      3   ,      4   ,    5   ,      6   ,      7   ,      8   ,      9]:
-print(i,      end=   '   ,   ' )   print()
-for      i      in      range(10):               print(i,      end=   '   ,   ' )
-0,1,2,3,4,5,6,7,8,9,
-0,1,2,3,4,5,6,7,8,9,
-Generators
-•   Actually, though,   it   doesn’t
-•   Try   this
-print([0   ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9])
-print(range(10))
-[0,      1,      2,      3,      4,      5,      6,      7,      8,      9]   range(0,    10)
-Generators
-•    So,   what   range   returns   is   not   a   list
-•   It   doesn’t   print   out   as   one
-•   It   actually   behaves   very   differently
-Generators
-•   To   understand   this,   we   need   to   understand   memory
-•    Python   uses   garbage   collection   for   memory   management
-•   What   is   memory   management?
-•    Consider   this   code:
-for    i      in      range(1   ,100000):
-x      =      [i]
-Generators
-•   We   create   lots   of   lists,   each   with   a   single   value
-•    For   each   list,   we   must   allocate   some   memory
-•   The   computer   has   a   fixed   amount   of memory
-•      Eventually   we   are   going   to   run   out
-•    So,   we   must   deallocate   or   recover   the   memory
-Generators
-•   What   is   memory   management,   and   why   do   we   care?
-•   Two   main   mechanisms:
-•    Some   languages   do   this   explicitly
-•    Some   use   Garbage   Collection   or   GC
-•    GC   is   automatic
-•    So   automatic   you   might   not   realise   it’s   there
-Demo
-Moving   through   a   list
-Generators
-•      How   does   this   relate   to   the   range   function?
-•   Imagine, we create a list
-Generators
-•      Now we   iterate   through   this   list   
-•   The   list   references   all   of   its   elements
-•   Including   those   we   have   used
-•   And   those   we   have   not   go   to   yet
-Generators
-•   A   generator   works   differently
-•   Imagine   it   as   a   function   with   some   data   attached   
-•   It’s   now   cheap   to   create
-•   And   costs   them   same   regardless   of the   size
-Generators
-•    Python   also   has   generator   expressions
-•      Like   a   list   comprehension
-•      Neat   and   succinct
-•   With   a   slightly   odd   “naked”   syntax
+•   Two   key   points   to   learning   to   program
+–   You   need   to   learn   what   you   want   to   say
+–   And   how   to   say   it
+•   With   normal   language,   first   is   easy   and   second   is   hard
+•   With   computers,   it   is   the   other   way   around
+Programming
+•      Programming   is   rich   in   best   practices
+–      Do   it this   way   and   it   will   work   better
+•      Programming   is   rich   in   conventions
+–    Do   it   this   way   because   everyone   else   does   it   this   way
+•    Can   be   hard   to   distinguish   the   two
+Questions
+Polling!    (by   shouting)
+Language   (Python)
+•   Interpreted   language,   with   (largely   useless)   shell
+•    Somewhat   OO,   more   multi   paradigm   these   days
+•    Started   off   as   a   system   admin   language
+•    Slowly   took   over   in   science   because   everyone   hated   Perl
+•   With   the   advent   of NumPy   and   pandas   hit   the   data   science   wave
+Why   Python
+•    Commonly   used,   very   popular
+•      Many   of you   will   have   seen   it   before
+•      Different   semantically   from   Java
+Why   Not   Python
+•      Many   of you   will   have   seen   it   before
+•      Syntactically   rather   similar to   Java
+•   Whitespace
+Programming   Languages
+•   Are   primarily written   for   humans to   understand
+•    Computers   come   second
+•    Most   languages   use   (one   or   more)   idioms   to   support   this
+Demo:      Hello   World   and   Calculating
+•      Hello World   in   Python
+•   And   in   PyCharm
+•   And   calculating
+Exercises
+•   There   are   lots   of   exercises
+•   “Look   up   the   formula   for   celsius   to   farenheit   conversion   and   work   out   temperature   that   water   freezes   and   boils   at   in   F.”
+•    Formula   F      =    C    *      9/5      +      32,   C      =    F      -      32      *      5      /      9
+Python
+•   Will   now   through   the   key   points   that   you   should   be   learning   this   week
+Python:      Types
+•   Values   have   types
+•    So   far,   we   have   created   two   numeric   types
+–   Integer,   Float
+•   Also,   can   deal   with   complex   number
+•      Python   will   coerce   between   numeric   types
+>>>      ##      Status:      Shell
+>>>      ##      Simple      Addition      of    integers   >>>      2      +      2
+4
+>>>      ##      Addition      of      floats
+>>>      2   .0      +      2   .0
+4.0
+>>>      ##      Addition    of   mixed      types   >>>      2      +      2   .5
+4.5
+>>>      ##    "True"    Division
+>>>      5      /      2
+2.5
+>>>      ##    "Int"      Division
+>>>    5    //    2
+2
+>>>      ##      Pointless    "Int"      Division      of      floats
+>>>    5    //    2   .0
+2.0
+>>>    ##      And      complex   >>>    3j      +      4j
+7j
+>>>    ##      And      combined
+>>>      1      +      3j   (1+3j)
+Python   and   Logic
+•   Values   can   also   represent   Boolean   values
+•   True or   False   in   python
+•      Note   the   upper   case!
+•   Also,   with   a   range   of logical   operators
+>>>      ##      Status:      Shell
+>>>    True
+True
+>>>    False
+False
+>>>    True      and      True
+True
+>>>    True      and      False
+
+
+False
+>>>      True      or      False
+True
+>>>      True      and      not      False
+True
+Python   and   strings
+•      Python   will   coerce   between   numeric   types
+•      But   not   strings   and   numerics
+##   Status:    Crash
+2    +      "2"
+Traceback    (most      recent    call      last):
+File    "/home/phillord/documents/teaching/2023-24/csc1034/dev-repo/lectures-1/python/type_m
+2    +      "2"
+TypeError:      unsupported      operand      type(s)      for      +:    ' int   '       and    '   str   '
+Variables
+•   We   can   assign   a   value   to   a   variable
+•   In   python   a   variable   is   defined   using   a   name
+•   Aside:   most   examples   are   now   not   using   the   shell
+•   If we   wish   to   see   things   in   the   output,   we   need   to   print   them
+Variables
+x      =      2
+y      =      2
+print   (x      +      y)   4
+Variables
+x      =      200
+•   x –   the   identifier
+•    = –   the   assignment
+•    200   –   the   value
+
+
+Variables:      identifiers
+•    Getting   the   naming   wrong   is   a   common   mistake
+•      Python   normally   signals   with   a   NameError
+•    Coming   up   with   good   names   is   hard
+•      Follow   Python   coding   conventions
+•    Do   not   favour   short   names   just   because   they   are   less   typing
+Lists
+•   What   if we   want   to   store   many   values?
+students_in_room      =    100
+student1      =      "John"               student2      =    "Paul"               student3      =      "George"   student4      =    "Ringo"
+•      But   what   if we   do   not   know   how   many   values?   ##   Lists
+•   Think   of it   like   a   set   of pigeon   holes
+•    Lists   are   values,   so   can   be   held   by   variables
+•   We   can   access   individual   values   by   index
+•    Lists   start   from   0
 ##   Status:      Shell
-any([x>42      for      x      in      range(0   ,    10**2)])
-any(x>42      for      x      in      range(0   ,    10**2**2**2))
-def      gen():
-return      (x>42    for      x      in      range(0   ,    10**2**2**2))   any(gen())
-NamedTuples   and   Typing
-•   Will   finish   off programming   section   by   introducing   named   tuples
-•   Also   lead   in   to   the   next   section
-NamedTuples
-•   If you   have   been   following   the   online   material,   we   have   dealt   with   trains   earlier
-•      One   list
-•      One   dictionary
+students_in_room      =    100
+student_names      =      [   "John"   ,    "Paul"   ,    "George"   ,      "Ringo"]
+student_names[0]   student_names[3]
+>>>      ##      Status:      Shell
+>>>    students_in_room      =      100
+>>>    student_names   代 写CSC1034: Lecture 1Java
+代做程序编程语言   =      ["John",    "Paul",    "George",    "Ringo"]
+>>>    student_names[0]
+'   John   '
+>>>    student_names[3]
+
+
+' Ringo   '
+Dictionaries
+•    Sometimes,   however,   numbers   are   just   not   convenient
+•    Say,   we   need   to   store   some   attributes   of   a   train
+•   We   could   do   this:
 ##      0      -      Name
 ##    1      -      Colour
 ##   2      -    Engine      Type ##      3    -      Train      Type       ##   4      -      Role
 wilson      =    [   "wilson"   ,    "red"   ,    "diesel"   ,      "EMD    F3"   ,    "Trainee"]
-print(wilson)   wilson      =      {
-"name"   :    "wilson"   ,
-"colour"   :      "red"   ,
-"engine"   :    "diesel"   ,   "type"   :      "EMD      F3"   ,
-"role"   :      "Trainee"
-}
-print(wilson)
-NamedTuples
-•      Lists   are   shorter   to write
-•      But   easy   to   forget,   or   make   mistakes
-•    So,   dictionaries   solve   the   problems?
-•   What   if   we   need   several?
+print   (wilson)
+[   ' wilson   '   ,      ' red   '   ,      ' diesel   '   ,      ' EMD      F3   '   ,      '   Trainee   ']
+•      But   this   is   painful.   Hard   to   remember,   easy   to   get   wrong
+Dictionaries
+•   It   is   much   better   to   use   a   dictionary
+•   Very   similar to   a   list   but   with   names
+•   The   map   between   keys   and   values
 wilson      =      {
 "name"   :    "wilson"   ,
 "colour"   :      "red"   ,
 "engine"   :    "diesel"   ,   "type"   :      "EMD      F3"   ,
 "role"   :      "Trainee"
 }
-brewster      =      {
-"name"   :    "brewster"   ,   "colour"   :      "blue"   ,
-"engine"   :    "diesel"   ,
-"type"   :    "BR      Class      55"   ,   "role"   :      "Trainee"
-}
-koko      =    {
-"name"   :      "koko"   ,
-"color"   :    "green"   ,
-"engine"   :      "electric"   ,
-"type"   :    "0    Series    Shinkansen"   ,   "role"   :      "Trainee"
-}
-print(wilson[   "colour"])   red
-NamedTuples
-•   We   can   create   multiple   instances   of a   similar   dictionary
-•   Which   is   nice
-•      But,   still   error   prone
-•      Possibly   you   saw   the   mistake
-##   Status:    Crash
-wilson      =      {
-"name"   :    "wilson"   ,
-"colour"   :      "red"   ,
-"engine"   :    "diesel"   ,   "type"   :      "EMD      F3"   ,
-"role"   :      "Trainee"
-}
-brewster      =      {
-"name"   :    "brewster"   ,   "colour"   :      "blue"   ,
-"engine"   :    "diesel"   ,
-"type"   :    "BR      Class      55"   ,   "role"   :      "Trainee"
-}
-koko      =    {
-"name"   :      "koko"   ,
-"color"   :    "green"   ,
-"engine"   :      "electric"   ,
-"type"   :    "0    Series    Shinkansen"   ,   "role"   :      "Trainee"
-}
-print(wilson[   "colour"])   print(koko[   "colour"])
-Traceback    (most      recent    call      last):
-File    "/home/phillord/documents/teaching/2023-24/csc1034/dev-repo/lectures-1/python/train_   print(koko["colour"])
-KeyError:      ' colour   '
-NamedTuples
-•      Even,   if we   build   our   instances   correctly
-•   We   could   (accidentally)   change   the   keys   after
-•      Named   tuples   address   both   of   these
-import      collections
-Train      =      collections.namedtuple(   "Train"   ,
-[   "name"   ,    "colour"   ,    "engine"   ,   "kind"   ,      "role"])
-wilson      =      Train(name=   "wilson"   ,      colour=   "red"   ,
-engine=   "diesel"   ,      kind=   "EMD      F3"   ,   role=   "Trainee")
-brewster      =      Train(name=   "brewster"   ,      colour=   "blue"   ,
-engine=   "diesel"   ,      kind=   "BR      Classic      55"   ,   role=   "Trainee")
-koko      =      Train(name=   "name"   ,    colour=   "green"   ,
-engine=   "electric"   ,      kind=   "0      Series      Shinkansen"   ,   role=   "Trainee")
-print(koko)Train(name=   '   name   '   ,    colour=   ' green   '   ,    engine=   ' electric   '   ,      kind=   ' 0    Series    Shinkansen   '   ,      role=   ' Tra代 写CSC1034: Lecture 3Python
-代做程序编程语言
-NamedTuples
-•   We   cannot   misname   a   field
-•   And,   it’s   a tuple,   so   it’s   immutable
-##   Status:    Crash
-import      collections
-Train      =      collections.namedtuple(   "Train"   ,
-[   "name"   ,    "colour"   ,    "engine"   ,   "kind"   ,      "role"])
-wilson      =      Train(name=   "wilson"   ,      colour=   "red"   ,
-engine=   "diesel"   ,      kind=   "EMD      F3"   ,   role=   "Trainee")
-brewster      =      Train(name=   "brewster"   ,      colour=   "blue"   ,
-engine=   "diesel"   ,      kind=   "BR      Classic      55"   ,   role=   "Trainee")
-koko      =      Train(name=   "name"   ,    color=   "green"   ,
-engine=   "electric"   ,      kind=   "0      Series      Shinkansen"   ,   role=   "Trainee")
-Traceback    (most      recent    call      last):
-File    "/home/phillord/documents/teaching/2023-24/csc1034/dev-repo/lectures-1/python/train_   koko      =      Train(name="name",    color="green",
-TypeError:      Train   .__new__   ()      got    an      unexpected      keyword    argument      ' color   '
-NamedTuples
-•    Named   tuples   use   a   different   syntax   for   accessing   values   import      collections
-Train      =      collections.namedtuple(   "Train"   ,
-[   "name"   ,    "colour"   ,    "engine"   ,   "kind"   ,      "role"])
-wilson      =      Train(name=   "wilson"   ,      colour=   "red"   ,
-engine=   "diesel"   ,      kind=   "EMD      F3"   ,   role=   "Trainee")
-print(wilson.name)               print(wilson.colour)   print(wilson.engine)
-wilson   red
-diesel
-NamedTuples
-•   This   is   actually   generic   syntax
-•      Called   “field”   or   “attribute”   access
-•   It’s   possible   to   introspect   on   attributes
-•   The tuple   knows   all   of its   attributes
-•      Use dir   and   hasattr
-•   Also, getattr and   setattr
-import      collections
-Train      =      collections.namedtuple(   "Train"   ,
-[   "name"   ,    "colour"   ,    "engine"   ,   "kind"   ,      "role"])
-wilson      =      Train(name=   "wilson"   ,      colour=   "red"   ,
-engine=   "diesel"   ,      kind=   "EMD      F3"   ,   role=   "Trainee")
-print(dir(wilson))
-print(hasattr(wilson,      "name"))
-[   ' __add__   '   ,      ' __class__   '   ,      ' __class_getitem__   '   ,      ' __contains__   '   ,      ' __delattr__   '   ,      ' __dir__   '   ,      ' __   True
-NamedTuples
-•      Named   tuples   are   fantastic   for   data-centric   apps
-•   Which   is   a   lot   of apps   in   Python
-•   Will   see   an   example   in   a   minute
-Testing
-•      Remember   our minimum   function
-•   There   is   a   difficulty
-•   I’ve   gone   to   all   this   effort,   but   it   cannot   remain   in   the   final   code
-•   If I   added   this   to   a   module,   we   would   run   our   tests
-•    But   if   remove,   we   have   lost   the   test   cases
-•   Which   we   probably   did   by   hand
-•   Also,   test_minimum   might   be   more   generally   useful   def   minimum(lst):
-if      len(lst)      ==      0   :
-raise      ValueError   ("Cannot      find   minimum    of    an    empty    sequence")
-lowest      =      lst[0]               for      i      in      lst[1   :]:
-if      i      <      lowest:   lowest      =      i
-return      lowest
-def      test_minimum(expected,      lst):
-print(   "Should      be"   ,      expected,    ":"   ,   minimum(lst))
-test_minimum(-100,      [-100   ,      0   ,    100])
-test_minimum(-100,      [100   ,      0   ,      -100])
-test_minimum(-1000,      [-1000   ,      0   ,    1000])   test_minimum(-10,      [-10   ,      0   ,    10])
-test_minimum(1000   ,      [1000   ,    10000])
-Testing
-•   We   can   check   whether   we   are   running   the   file
-•    Or   python   is   loading   it   as   a   module   def   minimum(lst):
-if      len(lst)      ==      0   :
-raise      ValueError   ("Cannot      find   minimum    of    an    empty    sequence")
-lowest      =      lst[0]               for      i      in      lst[1   :]:
-if      i      <      lowest:   lowest      =      i
-return      lowest
-def      test_minimum(expected,      lst):
-print(   "Should      be"   ,      expected,    ":"   ,   minimum(lst))
-if    __name__    ==       ' __main__ '   :
-test_minimum(-100,      [-100   ,      0   ,    100])
-test_minimum(-100,      [100   ,      0   ,      -100])
-test_minimum(-1000,      [-1000   ,      0   ,    1000])   test_minimum(-10,      [-10   ,      0   ,    10])
-test_minimum(1000   ,      [1000   ,    10000])
-Testing
-•   What   we   need   it   Test   Driven   Development
-•      Like   version   control,   Testing   is   an   essential   tool   for   the   programmer
-•   In   the   last   15   years,   become   routine
-•   This   has   rather   upended   development
-Testing
-•   The   process   of writing   code:
-•      Have   a   problem
-•    Define   a   set   of   requirements
-•   Write   some   code   to   fulfil   the   requirements
-•   Test   to   see   if you   have   solved   the   problem
-•      Or,   alternatively
-–    Have   a   problem
-–    Define   a   set   of requirements
-–   Turn   the   requirements   into   a   computational   runnable   test
-–   Write   some   code,   till   the   tests   run
-–    Stop
-Testing
-•   The   latter   is   called   Test-Driven   Development
-•   Write   your   tests   before   your   code
-•   If you   cannot   write   a   test,   you   do   not   understand   the   problem
-•   There   are   limitations
-•    For   large   datasets   -   where   you   do   not   know   the   answer
-•      Or   highly   computational   tasks
-•    Or   where   tests   are   not   automatable
-–    Especially   GUIs
-–   Where   there   is   human   interpretation
-Testing
-•   Assume   that   we   have   the   following   code
-•   In a   file   called   stats   .py   def   minimum(lst):
-if      len(lst)      ==      0   :
-raise      ValueError   ("Cannot      find   minimum    of    an    empty    sequence")
-lowest      =      lst[0]               for      i      in      lst[1   :]:
-if      i      <      lowest:   lowest      =      i
-return      lowest
-Testing
-•   To test this,   we   add   a   new   file   called   test_stats   .py
-•   The test   part   of the   name   is   important
-•   The   stats   can   be   anything
-import      stats
-def      test_minimum():
-assert      stats.minimum([-100   ,      0   ,    100])    ==    -100
-Testing
-•   We   use   the   Python   assert   keyword
-•   It   says   “I   claim that the   following   must   be   true”
-•   We   also   need   to   ensure   pytest   is   installed
-•      Now   run   pytest
-•    If our   test   succeeds,   we   get   a   nice   short   message
-=============================    test    session    starts    ==============================   platform      linux      --      Python      3.10.12,      pytest-7.4.2,      pluggy-1   .3   .0
-rootdir:      /home/phillord/documents/teaching/2023-24/csc1034/dev-repo/lectures-1/python   collected    1      item
-test_stats   .py      .                                                                                                                                                                                                                                                                                                                                                         [100%]
-==============================    1    passed    in      0   .01s      ===============================
-Testing
-•   If you’re   tests   fail,   we   get   something   longer   telling   us   the   problem
-import      pytest   import      stats
-def      test_success_minimum():
-assert      stats.minimum([-100   ,      0   ,    100])    ==    -200
-=============================    test    session    starts    ==============================   platform      linux      --      Python      3.10.12,      pytest-7.4.2,      pluggy-1   .3   .0
-rootdir:      /home/phillord/documents/teaching/2023-24/csc1034/dev-repo/lectures-1/python   collected    1      item
-test_stats_fail.py      F                                                                                                                                                                                                                                                                                                                           [100%]
-===================================    FAILURES    ===================================
-test_success_minimum                                                                                                                                                                           
-def      test_success_minimum():
->                                  assert      stats.minimum([-100,    0,    100])    ==    -200
-E                                       assert      -100    ==    -200
-E                                        +          where      -100    =    ([-100,    0,    100])   E                                           +                   where          =      stats   .minimum
-test_stats_fail   .py:5:      AssertionError
-===========================    short    test    summary      info    ============================   FAILED      test_stats_fail.py::test_success_minimum      -      assert      -100      ==      -200==============================    1    failed    in      0   .02s      ===============================
-•   A   formal   test   harness   is   a   big   improvement   on   what   we   said   before
-•   The   output   shows   us   what   we   need   and   nothing   else
-•    Our   expectations   for   correct   results   are   clear
-•   We   can   keep   tests   forever
-•      But   not   have   them   in   deployed   code
-Testing
-•    Can   change   the   way   that   you   code
-•   It’s   a   hard   practice to   adopt
-•    But   one   that   will   make   life   easier   as   you   move   on
-Conclusions
-•   We   are   nearing   the   end   of the   taught   material   for   this   section
-•      But   there   is   a   week   to   go:   take   the   time   to   read!
-•   If   you   have   anything   you   want   me   to   cover   next   week,   please   email!
+print   (wilson)
+{   '   name   '   :      ' wilson   '   ,      ' colour   '   :      ' red   '   ,      ' engine   '   :      ' diesel   '   ,      ' type   '   :      ' EMD      F3   '   ,      ' role   '   :      '   Trainee   '}
+Operations
+•      Now   that   we   have   our   collections,   what   can   we   do   with   them?
+•      Mostly,   we   want   to   do   something   to   everything
+•      Python   has   a   number   of ways   of achieving   this
+•   The   list   comprehension   is   probably   the   most   succinct
+
+
+##   Status:      Shell
+y      =      [1   ,2   ,3   ,4   ,5]
+##      square    every      element      in      y
+[x**2      for      x      in      y]
+##      or      in    the      given      list
+[x**2      for      x      in      [1   ,2   ,3   ,4   ,5]]
+##      we    can    use    any    variable      for    the    iterator    variable
+[n**2      for      n      in      y]
+##      even      this!
+[y**2      for      y      in      y]
+>>>      ##      Status:      Shell
+>>>      y      =      [1,2,3,4,5]
+>>>    ##    square      every      element      in      y   >>>      [x**2      for      x      in      y]
+[1,      4,      9,      16,      25]
+>>>      ##      or      in      the      given      list
+>>>    [x**2    for      x      in    [1,2,3,4,5]]   [1,      4,      9,      16,      25]
+>>>      ##      we      can      use      any      variable      for      the      iterator      variable
+>>>      [n**2      for      n      in      y]   [1,      4,      9,      16,      25]
+>>>      ##    even      this!
+>>>      [y**2      for      y      in      y]   [1,      4,      9,      16,      25]
+
+
+Operations
+•    Combined   with   the   range   function   can   be   very   powerful
+##   Status:      Shell
+[x**2      for      x      in      range   (100)]   >>>      ##      Status:      Shell
+>>>      [x**2      for      x      in      range(100)]
+[0,    1,      4,    9,    16,    25,    36,      49,      64,      81,    100,    121,    144,    169,    196,    225,    256,    289,    324,    361,    400,
+Conditions
+•    Python   also   uses   blocks   for   conditions
+•    Sometimes,   want   to   do   different   things   at   different   times
+•   We   have   a   condition   “if this then   do   that”
+x=2
+if   (      x      >    10      ):               print   (True)
+else   :
+print   (False)
+x=20
+if   (      x      >    10      ):               print   (True)
+else   :
+print   (False)
+False   True
+Functions
+•      Functions   are   a   critical   part   of programming
+•      Most   programs   consist   of a   large   number   of functions
+•   When   it   was   created,   Python   was   largely   procedural
+•    Over   the   years,   it   has   gained   many   more   functional   features
+•   We   have   already   seen   many   functions:    print,   list   and   sorted   are   all   example
+
+
+Functions
+•   A   function   takes   a   number   of parameters   and   returns   a   value
+def      add(x,y):
+return      x+y               print   (add(2   ,      3))   5
+Functions
+def      add(x,y):
+return      x      +      y
+•      def –   function   definition   coming   up
+•    add –   an   identifier   or   name   for   the   function
+•      () –   here   come   the   parameters
+•   x,y – the   parameters   of   the   function
+•      :   –   here   comes   a   block
+•      return – return   the   result   of this   statement
+•   x+y   add   x   and   y
+Programming   Conclusion
+•   I   have   taken   you   rapidly   through   all   the   key   elements   of Python
+•   I   have   touched   very   briefly   on   each   item
+•   There   is   more   material   on   canvas
+•   And   a   variety   of exercises
+•   Try   them!
+Development
+•   Writing   good   software   is   many   things
+•   It’s   not just   programming
+•      Here   is   my   list with   arbitrary   definitions
+–      Programming:    Writing   clean,   efficient,   well-documented   code   that   makes   sensible   use   of the   language   of choice
+–   Algorithms:   Understand   (enough) of   the   mathematics   of   computation
+–    User   Design:   Making   sure   your   software   does   something   people   actu-   ally   want
+–   Testing:   Making   sure   that   the   software   does   what   you   think   it   does
+–   Architecture:   Defining   the   interfaces   of software   modules   so   they   fit   together
+Software   Development
+•   These   slides   are   about   modern   software   development
+•      Partly   about tools,   Partly   about   practices
+•    Some   of these   you   will   have   seen   before
+•    Some   will   be   unfamiliar
+•    Some   are   hard   to   motivate   and   understand
+–    Mostly,   until   you   have   hit   the   problem   they   solve
+Versioning
+•   Versioning   tools   are,   I   think,   the   single   most   important   tool
+•      But why   do   we   want   it?
+Motivation
+•   “Well,   it was   working   last   night”
+•    Change   code   to   add   feature
+•      Find   it   breaks   something
+•    Change   code   back,   to   find   it’s   still   broken
+Motivation
+•   “Which idiot   did   that????”
+•   A   weird   bug   shows   up
+•   You   need   to   find   who   caused   it
+•   Alas,   it   often turns   out   to   be   you
+Motivation
+•   “What did   the   idiot   do?”
+•   A   weird   bug   shows   up
+•   You   need   to   know   exactly   what   the   change   was
+•   Again,   you   may   well   be   the   idiot
+•      Programming   involves   a   lot   of short-term   memory
+•   You   forget   very   quickly   what   you   did!
+Motivation
+•   “I   am   using   the   software   you   released   last   year   and   it’s   not   working”
+•      Updating   software   can   be   slow   and   painful
+•      Particularly   if many   other things   depend   on   it
+•    So,   there   may   be   several   versions   of the   software   around
+Motivation
+•   “We   should work   together   on   this”
+•   Working   on   code   together   can   be   difficult
+•    One   person   can   overwrite   changes   made   by   the   other
+•   The   time   spent   coordinating   can   outweigh   the   benefit
+•   “The Mythical   Man   Month”
+Motivation
+•   “We   should   work   together,   but   I   am   in   a   different   time   zone”
+•   The   situation   is   worse   if you   can   only   email   people
+•   And   worse,   worse   if you   are   never   awake   at   the   same   time
+Version   Control
+•   The   solution   to   all   these   turns   out   to   be   version   control
+•   “How   do   I   control   all   the   versions   I   have   of a   file
+Versioning
+•   We   are   using   git   in   the   school
+•   It   has   become   a   very   widely   used   standard
+•   It   British   slang   also   means   an   irritating,   contemptable   or   nasty   person
+•    Git   can   be   a   bit   quirky,   so   the   name   is   not   inappropriate
+Versioning
+•   In   the   broadest   sense,   it   is   very   simple
+–   Write   or   change   a   bit   of   code
+–   Write   a   comment   saying   what   you   did
+–   “Save”   a   version
+Demonstration
+Writing the   alphabet
+Generation   0
+•      Pre-1982
+•    Change   a   few   files
+•    Copy   all   the   files
+Generation   1:      RCS
+•      RCS –   Revision   Control   System,   by   Walter   Tichy
+•   Introduced   “Reverse   Delta”   and   “Locking”
+Generation   1:      Reverse   Delta
+•   Imagine   we   have   this   file:                                          a()   b()   c()
+d()
+Generation   1:      Reverse   Delta
+•   And   we   change   it   to   this   file:                               a()   b()   c()   d()
+e()
+Generation   1:      Reverse   Delta
+•   We   can   say   this   instead:
+diff   1.txt   2.txt   ***   2,4   ****            —   2,5   —-
+b()
+c()
+d()
++   e()
+Generation   1:      Reverse   Delta
+•    Or   in   RCS   format   which   is   terser:
+diff   -n   1.txt   2.txt
+a4   1   e()
+Generation   1:      Reverse   Delta
+•      But   to   work   out   the   current   version,   I   need   to   apply   many   deltas
+•    Store   the   latest   version
+•   And   delta’s   backward
+Generation   2:      CVS
+•    CVS   took   a   different   approach   than   RCS
+•   Allow   concurrent   editing.
+•    CVS   ==   Concurrent   Version   System
+•   Also,   the   name   of   a   US   chemist
+Generation   2:      Modify-Merge
+•      Let   people   do   what   they   want
+•   Then   fix   it   at the   end
+•    Clever   merging   –   not   single   file   based
+•    Sounds   terrible,   but   in   practice   works   well
+•   Tools   like   Dropbox,   work   like   this
+•      Except   without   the   clever   merging
+Generation   2:      SVN
+•    CVS   became   THE   versioning   system   for   a   long   time
+•    First   release   1990
+•    Eventually   largely   replaced   by   Subversion   (SVN)
+•    SVN   is   the   same   as   CVS   (but   better)
+Generation   3:      DVCS
+•      DVCS   work   like   a   combination   of RCS   and   SVN
+•    Each   developer   works   on   their   own   workspace
+•   Then   there   are   systems   for   sending   changes   between   these   workspaces
+•   Allows   many   different   works   flows
+
+
+
+
+
+
 
          
 加QQ：99515681  WX：codinghelp  Email: 99515681@qq.com
